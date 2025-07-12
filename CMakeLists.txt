@@ -5,6 +5,9 @@ set(CMAKE_CXX_STANDARD 17)
 
 set(SOURCES
     main.cpp
+    src/map.cpp
+    src/snake.cpp
+    src/food.cpp
     src/game_manager.cpp
 )
 
