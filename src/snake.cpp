@@ -30,7 +30,7 @@ void Snake::InitializeBodyPartPositions() {
     };
 }
 
-void Snake::UpdateBodyPartPositions() {
+void Snake::Move() {
     auto headPosition = bodyPartPositions.back();
     switch (direction) {
     case Direction::Up:

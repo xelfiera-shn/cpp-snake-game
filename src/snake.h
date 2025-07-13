@@ -19,7 +19,7 @@ public:
     Snake();
     ~Snake();
 
-    void UpdateBodyPartPositions();
+    void Move();
 
 private:
     void Initialize();
