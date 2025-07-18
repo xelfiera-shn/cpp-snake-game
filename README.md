@@ -14,7 +14,7 @@ A simple snake game written in C++ for Windows terminal.
 
 1. **Clone and navigate to project:**
 ```bash
-git clone https://github.com/xelfiera-shn/cpp-snake-game.git
+ git clone https://github.com/xelfiera-shn/cpp-snake-game.git
 cd cpp-snake-game
 ```
 
