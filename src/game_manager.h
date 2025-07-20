@@ -4,9 +4,12 @@
 #include <conio.h>
 #include <windows.h>
 
+#include "../utils/constants.h"
 #include "map.h"
 #include "snake.h"
 #include "food.h"
+
+using namespace constants;
 
 class GameManager {
 private:
@@ -14,7 +17,6 @@ private:
     std::shared_ptr<Snake> snake;
     std::shared_ptr<Food> food;
 
-    int gameSpeed = 100;
     int score = 0;
 
 public:

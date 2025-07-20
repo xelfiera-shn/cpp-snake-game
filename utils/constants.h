@@ -14,4 +14,6 @@ namespace constants {
     constexpr char SNAKE_BODY_CHAR = '0';
 
     constexpr char FOOD_CHAR = '*';
+
+    constexpr int GAME_SPEED = 100; // Miliseconds
 }

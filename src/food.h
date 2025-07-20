@@ -15,5 +15,5 @@ public:
     Food();
     ~Food();
 
-    void GenerateNewPosition(std::vector<std::pair<int, int>> snakeBodyPartPositions);
+    void GenerateNewPosition(std::vector<std::pair<int, int>>& snakeBodyPartPositions);
 };

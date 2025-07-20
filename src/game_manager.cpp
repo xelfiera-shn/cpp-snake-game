@@ -37,7 +37,7 @@ void GameManager::GameLoop() {
         map->SetCursorPosition(0, MAP_HEIGHT);
         std::cout << "Score: " << score << std::endl;
 
-        Sleep(gameSpeed);
+        Sleep(GAME_SPEED);
     }
 
     map->SetCursorPosition(0, MAP_HEIGHT + 1);
@@ -67,24 +67,18 @@ void GameManager::HandleUserInput()
 }
 
 bool GameManager::IsSnakeFeeded() {
-    const auto snakeHeadPosition = snake->bodyPartPositions.back();
-    if (snakeHeadPosition.first == food->position.first && snakeHeadPosition.second == food->position.second) {
-        return true;
-    } else {
-        return false;
-    }
+    const auto& snakeHeadPosition = snake->bodyPartPositions.back();
+    return snakeHeadPosition == food->position;
 }
 
 bool GameManager::IsGameOver() {
-    const auto snakeHeadPosition = snake->bodyPartPositions.back();
+    const auto& snakeHeadPosition = snake->bodyPartPositions.back();
     if (snakeHeadPosition.first <= 0 || snakeHeadPosition.first >= MAP_WIDTH) return true;
     else if (snakeHeadPosition.second <= 0 || snakeHeadPosition.second >= MAP_HEIGHT) return true;
 
     for (size_t i = 0; i < snake->bodyPartPositions.size() - 1; i++) {
-        const auto bodyPartPosition = snake->bodyPartPositions[i];
-        if (snakeHeadPosition.first == bodyPartPosition.first && snakeHeadPosition.second == bodyPartPosition.second) {
-            return true;
-        }
+        const auto& bodyPartPosition = snake->bodyPartPositions[i];
+        if (snakeHeadPosition == bodyPartPosition) return true;
     }
 
     return false;

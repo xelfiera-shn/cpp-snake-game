@@ -6,7 +6,7 @@ Food::Food() {
 Food::~Food() {
 }
 
-void Food::GenerateNewPosition(std::vector<std::pair<int, int>> bodyPartPositions) {
+void Food::GenerateNewPosition(std::vector<std::pair<int, int>>& bodyPartPositions) {
     do {
         this->position.first = rand() % MAP_WIDTH - 1;
         this->position.second = rand() % MAP_HEIGHT - 1;
