@@ -20,6 +20,8 @@ cd cpp-snake-game
 
 2. **Build with CMake:**
 
+Install CMake from [cmake.org](https://cmake.org/download/) and add to PATH.
+
 ```bash
 mkdir build
 cd build
@@ -46,8 +48,6 @@ The game requires administrator privileges to work properly.
 - **D** - Move right
 
 ## Troubleshooting
-
-**CMake not found:** Install CMake from [cmake.org](https://cmake.org/download/) and add to PATH.
 
 **Game won't start:** Make sure you're running as administrator.
 
