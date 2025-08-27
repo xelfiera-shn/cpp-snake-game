@@ -12,13 +12,13 @@ A simple snake game written in C++ for Windows terminal.
 
 ## Build Instructions
 
-1. **Clone and navigate to project:**
+1.**Clone and navigate to project:**
 ```bash
 git clone https://github.com/xelfiera-shn/cpp-snake-game.git
 cd cpp-snake-game
 ```
 
-2. **Build with CMake:**
+2.**Build with CMake:**
 
 Install CMake from [cmake.org](https://cmake.org/download/) and add to PATH.
 
