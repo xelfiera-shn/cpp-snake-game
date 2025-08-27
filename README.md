@@ -19,6 +19,7 @@ cd cpp-snake-game
 ```
 
 2. **Build with CMake:**
+
 ```bash
 mkdir build
 cd build
